@@ -1,0 +1,33 @@
+body{
+    background-image: url(img/imagem.png);
+    background-size: auto;
+    background-position: unset;
+    background-repeat: no-repeat;
+    color: red;
+    background-size: cover;
+    
+}
+#tapu {
+    width: 590px;
+    height: 65px;
+    transform: rotate(-0.047deg);
+    flex-shrink: 0;
+    text-align: center;
+    color: #FFF;
+    font-family: "Kode Mono";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+ svg {
+width:cover;
+height: 361.195px;
+transform: rotate(-0.047deg);
+flex-shrink: 0;
+fill: rgba(4, 18, 54, 0.75);
+stroke-width: 1px;
+stroke: #000;
+filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+margin-top: 20%;
+}
