@@ -6,11 +6,125 @@
     <title>Projeto X</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
     
-</head>
-<body>
-   
+    <style>
 
-     
+        body {
+            background-image: url(imgs/Frame\ 8.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Kode+Mono';
+            }
+
+        .jumbotron-i {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            height: 20vh;
+            margin: 0.5%;
+            transform: rotate(-0.047deg);
+            background-color: rgba(42, 54, 103, 0.40);
+            box-shadow: 0px 0px 60px 15px rgba(255, 255, 255, 0.25);
+            position: relative;
+        }
+
+        .nome {
+            color: #FFFF;
+            font-size: 48px;
+            font-optical-sizing: auto;
+            font-style: normal;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .sigla {
+            color: #FFFF;
+            font-size: 18px;
+            margin-top:7px;
+            text-align: center;
+            display: block;
+        }
+
+        #texto {
+            color: #FFFF;
+            text-align: justify;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 128.045%;
+            width: 600px;
+            flex-shrink: 0; 
+            margin-top: 8%;
+            margin-left: 1.5%;
+        }
+
+            .botao {
+            display: inline-block;
+            width: 23%;
+            height: 3%;
+            text-align: center;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            text-decoration: none;
+            flex-shrink: 0;
+            border-radius: 10px;
+            color: #FFFF;
+            background: linear-gradient(90deg, #071A3F 0%, #3700B7 100%);
+            box-shadow: 3px 4px 21px 7px rgba(255, 255, 255, 0.08);
+            border: none;
+            margin-top: 110px;
+            margin-left: 150px;
+        }
+
+        .botao:hover {
+            box-shadow: #071A3F;
+            background-color: linear-gradient(90deg, #0b2b6b 0%, #230863 100%);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="jumbotron-i"> 
+            <h1 class="nome">T.U.P.A.</h1> 
+            <p class="sigla">Turismo Alucinante Pelo Universo</p>
+    </div>
+
+    <div id="texto">
+        <p>
+            Descubra a magia do cosmos com nosso serviço de viagens espaciais! Oferecemos passeios emocionantes à órbita terrestre e além, com segurança e conforto. Prepare-se para uma experiência inesquecível, onde você poderá ver a Terra de longe e sentir a gravidade zero. Sua aventura no espaço começa agora!
+        </p>
+    </div>  
+
+        <a href="indexplanos.html" class="botao" id="meuBotao">Ao infinito e...</a>
+      
+        <script>
+            const botao = document.getElementById('meuBotao');
+    
+            // Armazene o texto original e o texto de hover
+            const textoOriginal = "Ao infinito e...";
+            const textoHover = "Ao infinito e ALÉM!!!";
+    
+            // Mude o texto quando o mouse entra e sai
+            botao.addEventListener('mouseenter', () => {
+            botao.textContent = textoHover;
+            });
+    
+            botao.addEventListener('mouseleave', () => {
+            botao.textContent = textoOriginal;
+            });
+    
+        </script>
+
 </body>
 </html>
