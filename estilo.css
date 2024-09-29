@@ -191,6 +191,9 @@ body{
             width:200px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            font-family: "Kode Mono", monospace;
+            font-weight: bold;
+            font-size: 20px;
     }
     button:hover{
         text-align: center;
@@ -205,5 +208,5 @@ body{
             border: none;
             padding: 10px;
             height: 60px;
-            width:250px;
+            width:230px;
     }

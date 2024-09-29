@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
     }
     p{
         font-size: 20px;
-        text-align: justify;
+        
     }
     body {
         margin: 0;
@@ -25,6 +25,7 @@
     .grid-container {
         display: grid; /* Use Grid layout */
         grid-template-columns: 1.1fr 0.9fr; /* Create two equal columns */
+        gap:5%;
         height: 100vh; /* Full height of the iframe */
     }
 
@@ -32,6 +33,7 @@
         padding: 20px;
         box-sizing: border-box; /* Include padding in height/width calculations */
         overflow: auto; /* Allow scrolling if content overflows */
+        
     }
 
     #column1 {
@@ -53,9 +55,12 @@
             border: none;
             padding: 10px;
             height: 50px;
-            width:200px;
+            width:250px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            font-family: "Kode Mono", monospace;
+            font-weight: bold;
+            font-size: 20px;
     }
     button:hover{
         text-align: center;
@@ -70,7 +75,7 @@
             border: none;
             padding: 10px;
             height: 60px;
-            width:250px;
+            width:300px;
     }
     }
  
@@ -80,12 +85,12 @@
     <div class="grid-container">
         <div class="grid-item" id="column1">
             <img src="imgs/Line 1.svg">
-            <h2>Jupiter</h2>
-            <p>Com o nosso elegante plano Jupiter, você poderá ver pessoalmente o mais perto possivel o maior planeta do nosso sistema solar, ao mesmo tempo que desfruta dos beneficios do vagão VIP. 
-            Este plano te proporciona com cadeiras confortáveis alinhadas com mesas próprias, acesso ao nosso expansivo buffet de almoço e janta. e um quarto confortável para 2 pessoas.</p>
+            <h2>Galáxia Prime</h2>
+            <p>Com o nosso elegante plano 'Galáxia Prime', você poderá ver de perto o maior planeta do nosso sistema solar, ao mesmo tempo que desfruta dos beneficios de um vagão VIP. Segure firme e tire proveito da nossa rota em direção a Jupiter. 
+            Este plano te proporciona cadeiras confortáveis alinhadas com mesas próprias, acesso ao nosso expansivo buffet de café da manhã, almoço e janta. Além do quarto extremamente confortável para até 2 (duas) pessoas.</p>
         </div>
         <div class="grid-item" id="column2">
-            <h2>Column 2</h2>
+            <h2>Orçamento</h2>
             <p>This is the content of the second column.</p>
             <button>Escolher este plano</button>
         </div>
