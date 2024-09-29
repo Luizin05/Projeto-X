@@ -1,10 +1,5 @@
 body{
-    background-position: unset;
-    background-repeat: no-repeat;
-    color: rgb(0, 0, 0);
-    background-size: cover;
-    margin:0;
-    
+    margin: 0;
 }
 #tapu {
     width: 590px;
@@ -19,11 +14,6 @@ body{
     font-weight: 700;
     line-height: normal;
 }
-*{
-    font-family: "Kode Mono", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
 .topo{
     width:100%;
     height:40%;
@@ -37,31 +27,122 @@ body{
     position: absolute;
     width:250px;
     height:auto;
+    left: 20px;
 }
-.header{
+.body{
     position: relative;
     width: 100%;
     margin:0;
     display:block;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 .galaxiaM{
     position: absolute;
-    top:45%;
-    width: 65%;
-    height: 100%;
-    left: 50%; /* Center it horizontally */
-    transform: translateX(-50%); /* Adjust for its own width */
-    z-index: 0;
+    top: 45%;
+    width:65%;
+    height: 2340px;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0;
-    object-fit: cover;
+    z-index: 1;
+    border-radius: 69px 69px 0px 0px;
 }
-.galaxiaM::before {
-    content: '';
+.rectangle-div {
+    top: 45%;
+    left: 50%;
+    width: 65%;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 0, 0, 0.5); /* Color and opacity */
-    z-index: 2; /* Above the image */
+    box-shadow: 0px 0px 29.6px 25px rgba(255, 255, 255, 0.23);
+    backdrop-filter: blur(18.7px);
+    border-radius: 69px 69px 0px 0px;
+    height: 2340px;
+    transform: translateX(-50%) rotate(-0.1deg);
+    z-index: 2;
 }
+    
+    nav {
+        text-align: justify;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        z-index: 3;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1200px; /* Limit the max width */
+        margin: 0 auto; /* Center the container */
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap; /* Allow rows to wrap */
+        margin-left: -15px; /* Adjust for gutters */
+        margin-right: -15px;
+        justify-content: center;
+    }
+    
+    
+
+    .card {
+        min-width:250px;
+        width: 250PX;
+        margin: 10px; 
+        background-color: #FFF;
+        text-align: center; 
+        padding-bottom:20px;
+        overflow: visible;
+        border-radius: 20px;
+        display: inline-block;
+        vertical-align: top;
+        border: 2px solid red;
+        border: 0;
+        
+    }
+
+    .card-img-top{
+        width: 150px;
+        height: auto;
+        margin-bottom: 40px;
+        background-color: #ffffff00;
+
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20%;
+        
+    }
+    
+
+    .frame-child {
+        position: absolute;
+        top: 1229.78px;
+        left: 269.14px;
+        border-radius: 32px;
+        background-color: #fff;
+        width: 60%;
+        height: 500px;
+        transform: translateX(-50%);
+        display: block;
+        left: 50%;
+        z-index: 3;
+        }
+        .col-4 {
+            padding: 15px; /* Create gutters between columns */
+            box-sizing: border-box; /* Include padding in the width */
+            flex: 0 0 33.3333%; /* Each column takes one-third of the width */
+        }
+        @media (max-width: 768px) {
+            .col-4 {
+                flex: 0 0 100%; /* Stack columns on smaller screens */
+            }
+        }
