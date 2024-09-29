@@ -42,7 +42,7 @@ body{
     position: absolute;
     top: 45%;
     width:65%;
-    height: 2340px;
+    height: 1740px;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
@@ -57,7 +57,7 @@ body{
     box-shadow: 0px 0px 29.6px 25px rgba(255, 255, 255, 0.23);
     backdrop-filter: blur(18.7px);
     border-radius: 69px 69px 0px 0px;
-    height: 2340px;
+    height: 1740px;
     transform: translateX(-50%) rotate(-0.1deg);
     z-index: 2;
 }
@@ -209,4 +209,22 @@ body{
             padding: 10px;
             height: 60px;
             width:230px;
+    }
+    footer {
+        background-color: #0f0220;
+        color: white;
+        padding: 5px;
+        width: 100%;
+        position: Relative; /* Mantém o footer fixo ao fundo */
+        bottom:-1500px; /* Posiciona o footer no fundo da página */
+        left: 0;
+        font-family: 'Kode Mono', monospace;
+        margin: 0;
+        z-index: 4;
+    }
+    @media (max-width: 768px) {
+        footer {
+            text-align: left;
+            padding: 20px;
+        }
     }

@@ -4,19 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saturno</title>
+    <style>
+       
+        h2{
+            font-size: 30px;
+            font-weight:bold;
+        }
+        p{
+            font-size: 23px;
+            text-align: justify;
+            
+        }
+        body {
+            margin: 0;
+            font-family: "Kode Mono", monospace;
+        }
+    
+        .grid-container {
+            display: grid; /* Use Grid layout */
+            grid-template-columns: 1.1fr 0.9fr; /* Create two equal columns */
+            gap:5%;
+            border-left:5;
+            height: 100vh; /* Full height of the iframe */
+        }
+    
+        .grid-item {
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in height/width calculations */
+            overflow: auto; /* Allow scrolling if content overflows */
+            
+        }
+    
+        #column1 {
+            top:auto;
+    
+        }
+    
+        #column2 {
+            border-left:5;
+        }
+        button{
+            text-align: center;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                text-decoration: none;
+                flex-shrink: 0;
+                border-radius: 10px;
+                color: #FFFF;
+                background: linear-gradient(90deg, #071A3F 0%, #3700B7 100%);
+                box-shadow: 3px 4px 21px 7px rgba(255, 255, 255, 0.08);
+                border: none;
+                padding: 10px;
+                height: 50px;
+                width:250px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-family: "Kode Mono", monospace;
+                font-weight: bold;
+                font-size: 20px;
+        }
+        button:hover{
+            text-align: center;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                text-decoration: none;
+                flex-shrink: 0;
+                border-radius: 10px;
+                color: #FFFF;
+                background: linear-gradient(90deg, #071A3F 0%, #3700B7 100%);
+                box-shadow: 3px 4px 21px 7px rgba(255, 255, 255, 0.08);
+                border: none;
+                padding: 10px;
+                height: 60px;
+                width:300px;
+        }
+     
+        </style>
 </head>
 <body>
     
-    <div class="grid-container3"></div>
-    <div class="grid-item3" id="column001">
+    <div class="grid-container">
+    <div class="grid-item" id="column1">
         <img src="">
         <h2>Trajetória Celestial</h2>
         <p>Com o nosso exclusivo plano 'Trajetória Celestial', sua jornada pelo cosmos atinge novos patamares de luxo e exclusividade. Voe além dos limites, com uma rota que inclui um deslumbrante passeio especial até o misterioso Saturno, com vista incrível de seus anéis.
         Neste plano, desfrute de suítes privadas de alto nível com serviço de bordo personalizado e refeições gourmet que abrangem do café da manhã à ceia. Viva a experiência mais exclusiva do universo!</p>
     </div>
-    <div class="grid-item3" id="column002">
-        <h2>Column 2</h2>
-        <p>This is the content of the second column.</p>
+    <div class="grid-item" id="column2">
+        <h2>Orçamento - Trajetória Celestial</h2>
+<p>
+    <p>Valor:<br>R$ 5.999.999,00 por pessoa</p>
+    <p>Desconto:<br>R$ 599.999,90 (10% de desconto) para pagamento à vista</p>
+    <p>Valor com Desconto:<br>R$ 5.399.999,10</p>
+    <p>Parcelamento:
+        <ul>
+            <li>À vista: R$ 5.399.999,10</li>
+            <li>Parcelado Sem Juros: Em até 24x de R$ 224.999,99</li>
+            <li>Parcelado Com Juros: Em até 48x de R$ 140.000,00 (2% ao mês)</li>
+            <li>Taxas: Sem taxas adicionais para parcelamento no cartão de crédito.</li>
+        </ul>
+    </p><p>Formas de Pagamento: <ul><li>Cartão de Crédito;</li> <li>Boleto Bancário;</li> <li>PIX;</li> <li>Cartão de Débito.</li></ul></p>
+</p>
         <button>Escolher este plano</button>
     </div>
 </div>
