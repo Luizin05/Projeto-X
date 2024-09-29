@@ -75,9 +75,13 @@ body{
     }
     
     .container {
-        width: 90%;
-        max-width: 1200px; /* Limit the max width */
+        width: 100%;
+        max-width: 1050px; /* Limit the max width */
         margin: 0 auto; /* Center the container */
+        
+        justify-content: center;
+       
+        
     }
     
     .row {
@@ -91,9 +95,10 @@ body{
     
 
     .card {
-        min-width:250px;
-        width: 250PX;
-        margin: 10px; 
+        min-width:60%;
+        width: 80%;
+        margin: 15px; 
+        height:80%;
         background-color: #FFF;
         text-align: center; 
         padding-bottom:20px;
@@ -101,31 +106,52 @@ body{
         border-radius: 20px;
         display: inline-block;
         vertical-align: top;
-        border: 2px solid red;
         border: 0;
+        justify-content: center;
         
     }
 
-    .card-img-top{
-        width: 150px;
-        height: auto;
-        margin-bottom: 40px;
+    .card-img-top {
+        margin-top: -40px;
+        margin-bottom: 10px;
         background-color: #ffffff00;
 
+    }
+    .card-saturno{
+        margin-bottom: 20%;
+    }
+    .saturno{
+        margin-left: -30px;
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .jupiter{
+        width: 170px;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .card-jupiter{
+        margin-bottom: 15%;
+    }
+    .marte{
+        width: 150px;
+        height: auto;
+        margin-bottom: 35px;
+        
     }
     .card-body {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20%;
+        padding: 20px;
         
     }
     
 
     .frame-child {
         position: absolute;
-        top: 1229.78px;
         left: 269.14px;
         border-radius: 32px;
         background-color: #fff;
@@ -135,8 +161,11 @@ body{
         display: block;
         left: 50%;
         z-index: 3;
+        top:95%;
+        margin-top: 15%;
         }
-        .col-4 {
+    .col-4 {
+            object-position: center;
             padding: 15px; /* Create gutters between columns */
             box-sizing: border-box; /* Include padding in the width */
             flex: 0 0 33.3333%; /* Each column takes one-third of the width */
@@ -146,3 +175,35 @@ body{
                 flex: 0 0 100%; /* Stack columns on smaller screens */
             }
         }
+    button{
+        text-align: center;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            text-decoration: none;
+            flex-shrink: 0;
+            border-radius: 10px;
+            color: #FFFF;
+            background: linear-gradient(90deg, #071A3F 0%, #3700B7 100%);
+            box-shadow: 3px 4px 21px 7px rgba(255, 255, 255, 0.08);
+            border: none;
+            padding: 10px;
+            height: 50px;
+            width:200px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+    }
+    button:hover{
+        text-align: center;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            text-decoration: none;
+            flex-shrink: 0;
+            border-radius: 10px;
+            color: #FFFF;
+            background: linear-gradient(90deg, #071A3F 0%, #3700B7 100%);
+            box-shadow: 3px 4px 21px 7px rgba(255, 255, 255, 0.08);
+            border: none;
+            padding: 10px;
+            height: 60px;
+            width:250px;
+    }

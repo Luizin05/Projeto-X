@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.A.P.U.</title>
+    <link rel="icon" href="imgs/Train icon.svg" alt="icon train">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+   <section  class="body">
+    <div class="header">
+        <img src="imgs/w10388-small 1.png" class="topo">
+        <img src="imgs/logo.svg" class="icone">
+    </div>
+    <div class="bloco-meio">
+        <img src="imgs/w10388-small 2.png" class="galaxiaM">
+        <div class="rectangle-div"></div>
+    </div>
+    
+    
+    <nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top marte" src="imgs/2 1.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h5 class="card-title">Marte</h5>
+                      <p class="card-text">Viaje para nosso planeta vizinho e conheça sua beleza pessoalmente com nosso plano base.</p>
+                      <button id="botao" onclick="loadIframe('marte.html')">Mais detalhes</button>
+                    </div>
+                  </div>
+            </div>
+     
+            <div class="col-4">
+                <div class="card card-jupiter" >
+                    <img class="card-img-top jupiter" src="imgs/pngtree-beautiful-planet-jupiter-png-image_11494148 1.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h5 class="card-title">Jupiter</h5>
+                      <p class="card-text">Veja de perto a grandeza do maior planeta de nosso sistema solar enquanto no conforto do nosso plano médio.</p>
+                      <button id="botao" onclick="loadIframe('jupiter.html')">Mais detalhes</button>
+                    </div>
+                  </div>
+            </div>
+     
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top saturno" src="imgs/360_F_809174670_OboyTUyEIBVCVGYLRUjlK2Wx6QE1kggT 1.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h5 class="card-title">Saturno</h5>
+                      <p class="card-text">Explore os deslumbrantes anéis de Saturno e admire suas cores vibrantes, tudo isso no aconchego do nosso plano luxuoso.</p>
+                      <button id="botao" onclick="loadIframe('saturno.html')">Mais detalhes</button>
+                    </div>
+                  </div>
+            </div>
+     
+            </div>
+        </div>
+    </div>
+    <iframe name="Principal" class="frame-child" id="a"></iframe>
+    </iframe>
+    <script>
+        function loadIframe(FileName) {
+            document.getElementById('Principal').src = FileName;
+        }
+    
+    </script>
+
+    </section>
+    </nav>
+    
+
+</body>
+</html>
