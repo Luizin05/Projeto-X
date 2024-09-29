@@ -24,7 +24,7 @@
 
     .grid-container {
         display: grid; /* Use Grid layout */
-        grid-template-columns: 1.2fr 0.8fr; /* Create two equal columns */
+        grid-template-columns: 1.1fr 0.9fr; /* Create two equal columns */
         height: 100vh; /* Full height of the iframe */
     }
 
@@ -35,10 +35,43 @@
     }
 
     #column1 {
+        top:auto;
 
     }
 
     #column2 {
+    button{
+        text-align: center;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            text-decoration: none;
+            flex-shrink: 0;
+            border-radius: 10px;
+            color: #FFFF;
+            background: linear-gradient(90deg, #071A3F 0%, #3700B7 100%);
+            box-shadow: 3px 4px 21px 7px rgba(255, 255, 255, 0.08);
+            border: none;
+            padding: 10px;
+            height: 50px;
+            width:200px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+    }
+    button:hover{
+        text-align: center;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            text-decoration: none;
+            flex-shrink: 0;
+            border-radius: 10px;
+            color: #FFFF;
+            background: linear-gradient(90deg, #071A3F 0%, #3700B7 100%);
+            box-shadow: 3px 4px 21px 7px rgba(255, 255, 255, 0.08);
+            border: none;
+            padding: 10px;
+            height: 60px;
+            width:250px;
+    }
     }
  
     </style>
@@ -54,6 +87,7 @@
         <div class="grid-item" id="column2">
             <h2>Column 2</h2>
             <p>This is the content of the second column.</p>
+            <button>Escolher este plano</button>
         </div>
     </div>
 </body>
