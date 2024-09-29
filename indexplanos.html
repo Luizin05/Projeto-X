@@ -33,7 +33,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Marte</h5>
                       <p class="card-text">Viaje para nosso planeta vizinho e conheça sua beleza pessoalmente com nosso plano base.</p>
-                      <button id="botao" onclick="loadIframe('marte.html')">Mais detalhes</button>
+                      <button id="botao-marte" onclick="loadIframe('marte.html')">Mais detalhes</button>
                     </div>
                   </div>
             </div>
@@ -44,7 +44,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Jupiter</h5>
                       <p class="card-text">Veja de perto a grandeza do maior planeta de nosso sistema solar enquanto no conforto do nosso plano médio.</p>
-                      <button id="botao" onclick="loadIframe('jupiter.html')">Mais detalhes</button>
+                      <button id="botao-jupiter" onclick="loadIframe('jupiter.html')">Mais detalhes</button>
                     </div>
                   </div>
             </div>
@@ -55,7 +55,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Saturno</h5>
                       <p class="card-text">Explore os deslumbrantes anéis de Saturno e admire suas cores vibrantes, tudo isso no aconchego do nosso plano luxuoso.</p>
-                      <button id="botao" onclick="loadIframe('saturno.html')">Mais detalhes</button>
+                      <button id="botao-saturno" onclick="loadIframe('saturno.html')">Mais detalhes</button>
                     </div>
                   </div>
             </div>
@@ -63,14 +63,30 @@
             </div>
         </div>
     </div>
-    <iframe name="Principal" class="frame-child" id="a"></iframe>
-    </iframe>
+    <div class='iframe-container' id='iframe-section'>
+    <iframe name="Principal" id='Principal' class='frame-child'></iframe>
+    </div>
     <script>
-        function loadIframe(FileName) {
-            document.getElementById('Principal').src = FileName;
-        }
-    
+       document.getElementById('botao-saturno').addEventListener('click', function() {
+    loadIframe('saturno.html');
+});
+
+document.getElementById('botao-jupiter').addEventListener('click', function() {
+    loadIframe('jupiter.html');
+});
+
+document.getElementById('botao-marte').addEventListener('click', function() {
+    loadIframe('marte.html');
+});
+
+function loadIframe(FileName) {
+    document.getElementById('Principal').src = FileName;
+    // Smooth scroll to iframe section when the button is clicked
+    document.getElementById('Principal').scrollIntoView({ behavior: 'smooth' });
+}
     </script>
+    
+    
 
     </section>
     </nav>
