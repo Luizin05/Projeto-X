@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+       
+    h2{
+        font-size: 30px;
+        font-weight:bold;
+    }
+    p{
+        font-size: 20px;
+        text-align: justify;
+    }
+    body {
+        margin: 0;
+        font-family: "Kode Mono", monospace;
+    }
+
+    .grid-container {
+        display: grid; /* Use Grid layout */
+        grid-template-columns: 1.2fr 0.8fr; /* Create two equal columns */
+        height: 100vh; /* Full height of the iframe */
+    }
+
+    .grid-item {
+        padding: 20px;
+        box-sizing: border-box; /* Include padding in height/width calculations */
+        overflow: auto; /* Allow scrolling if content overflows */
+    }
+
+    #column1 {
+
+    }
+
+    #column2 {
+    }
+ 
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" id="column1">
+            <img src="imgs/Line 1.svg">
+            <h2>Jupiter</h2>
+            <p>Com o nosso elegante plano Jupiter, você poderá ver pessoalmente o mais perto possivel o maior planeta do nosso sistema solar, ao mesmo tempo que desfruta dos beneficios do vagão VIP. 
+            Este plano te proporciona com cadeiras confortáveis alinhadas com mesas próprias, acesso ao nosso expansivo buffet de almoço e janta. e um quarto confortável para 2 pessoas.</p>
+        </div>
+        <div class="grid-item" id="column2">
+            <h2>Column 2</h2>
+            <p>This is the content of the second column.</p>
+        </div>
+    </div>
+</body>
+</html>
